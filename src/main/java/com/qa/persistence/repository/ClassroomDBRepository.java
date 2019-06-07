@@ -15,7 +15,7 @@ import com.qa.util.JSONUtil;
 
 @Transactional(TxType.SUPPORTS)
 @Default
-public class ClassroomDBRepository implements ClassroomRepository {
+public class ClassroomDBRepository  implements ClassroomRepository {
 	
 	@Inject
 	private JSONUtil util;

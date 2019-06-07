@@ -5,6 +5,7 @@ import java.util.Map;
 
 import javax.enterprise.inject.Alternative;
 
+import com.qa.persistence.domain.Classroom;
 import com.qa.persistence.domain.Trainee;
 import com.qa.util.JSONUtil;
 
@@ -14,8 +15,9 @@ public class TraineeMapRepository implements TraineeRepository {
 	Map<Integer, Trainee> traineeMap = new HashMap<Integer, Trainee>();
 	@Override
 	public String getAllTrainees() {
-		return new JSONUtil().getJSONForObject(traineeMap);
+		return new JSONUtil().getJSONForObject(traineeMap); 
 	}
+
 
 	@Override
 	public String createTrainee(String trainee) {
@@ -39,4 +41,11 @@ public class TraineeMapRepository implements TraineeRepository {
 		return "Trainee successfully updated";
 	}
 
+	public void setTraineeMap(Map<Integer, Trainee> TraineeMap) {
+		this.traineeMap = TraineeMap;
+	}
+	
+	public Map<Integer, Trainee> getTraineeMap() {
+		return traineeMap;
+	}
 }

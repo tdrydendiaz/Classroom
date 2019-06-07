@@ -17,7 +17,7 @@ public class ClassroomServiceTest {
 	private Classroom class1 = new Classroom(1, "Matt", "Tan");
 	private Classroom class2 = new Classroom(2, "Chez", "Mon");
 	private Classroom class3 = new Classroom(3, "John", "Bob");
-	private JSONUtil jsonUtil = new JSONUtil();
+	private JSONUtil jsonUtil = new JSONUtil();  
 	
 	@Before
 	public void setup() {
