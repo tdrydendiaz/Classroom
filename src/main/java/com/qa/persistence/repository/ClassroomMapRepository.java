@@ -33,6 +33,8 @@ public class ClassroomMapRepository implements ClassroomRepository {
 		return "Classroom successfully removed";
 	}
 
+	
+
 	@Override
 	public String updateClassroom(int ClassroomID, String classroom) {
 		new JSONUtil();
@@ -44,11 +46,14 @@ public class ClassroomMapRepository implements ClassroomRepository {
 	public void setClassroomMap(Map<Integer, Classroom> classroomMap) {
 		this.classroomMap = classroomMap;
 	}
+	
+	public Map<Integer, Classroom> getClassroomMap() {
+		return classroomMap;
+	}
 
 public int findTrainer(String String) {
 		
 		int count = 0;
-
 		for (Classroom aClassroom : classroomMap.values()) {
 			if (aClassroom.getTrainer().equals(String)) {
 				System.out.println(count++); 
@@ -56,4 +61,6 @@ public int findTrainer(String String) {
 		} 
 		 return count;
 }
+
 }
+

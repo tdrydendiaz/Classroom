@@ -12,7 +12,7 @@ public class ClassroomServiceImpl implements ClassroomService {
 
 	@Override
 	public String getAllClassrooms() {
-		return repo.getAllClassroom();
+ 	return repo.getAllClassroom();
 		}
 
 	@Override
