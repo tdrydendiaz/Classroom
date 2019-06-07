@@ -23,6 +23,10 @@ public class Classroom {
 		this.trainees = trainees;
 	}
 	
+	public Classroom() {
+		
+	}
+	
 	public int getClassroomID() {
 		return classroomID;
 	}
